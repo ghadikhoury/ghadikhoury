@@ -1,48 +1,25 @@
 # Ghadi Khoury
 
-Artificial Intelligence student at Penn Engineering building reliable data, web, and machine-learning systems. My work spans grid-resilience software, computer vision, real-time applications, and computational neuroscience.
+AI Engineering student at Penn building software and machine-learning systems, with experience in distributed systems, computer vision, data engineering, and research.
 
-## Featured work
+## Featured projects
 
-### [Flux - Grid Resilience Data Product](https://github.com/2WKG/flux)
+### [Incident — Distributed-systems incident response](https://github.com/ghadikhoury/incident)
 
-**Python, TypeScript, React, DuckDB**
+Built a system that detects failures in simulated microservices, correlates AWS CloudWatch alarms, identifies the likely root service, and shows incidents on a live dashboard. It uses FastAPI, React, WebSockets, DynamoDB, Lambda, SQS, and S3. Added a Bedrock diagnosis workflow that gathers bounded evidence and proposes remediation for engineer approval; live model accuracy remains unscored because of an account quota. [Watch the demo](https://github.com/ghadikhoury/incident/blob/main/docs/demo/incident-stage1-demo.mp4) · [Read the evaluation](https://github.com/ghadikhoury/incident/blob/main/docs/STEP9_EVALUATION.md)
 
-Flux is an interactive grid-resilience product for comparing synthetic energy scenarios, with a data architecture designed to support validated, source-backed datasets.
+### [Flux — Grid-resilience data product](https://github.com/2WKG/flux)
 
-- Contributed **40+ merged pull requests** spanning data ingestion, validation, canonical DuckDB metrics, reproducible analysis, provenance, and interactive visualization.
-- Implemented a fail-closed data-quality gate that rejects incomplete, stale, or mislabeled records.
-- Built reproducible EDA and anomaly analysis across the canonical metric layer while preserving units, versions, and source lineage.
+Contributed to a team-built product for exploring **synthetic** energy scenarios. My work spans data ingestion, validation, DuckDB metrics, provenance, reproducible analysis, and interactive visualization, including a data-quality gate that rejects incomplete or mislabeled records. [View my merged pull requests](https://github.com/2WKG/flux/pulls?q=is%3Apr+is%3Amerged+author%3Aghadikhoury)
 
-[Explore Flux](https://github.com/2WKG/flux) | [View my merged contributions](https://github.com/2WKG/flux/pulls?q=is%3Apr+is%3Amerged+author%3Aghadikhoury) | [Reproducible EDA work](https://github.com/2WKG/flux/pull/115)
+### [PennAir Shape Detection — Computer vision](https://github.com/ghadikhoury/PennAir-ShapeDetection)
 
-## Research
+Built an OpenCV pipeline that detects and classifies shapes in noisy video, tracks persistent object IDs and trajectories, and provides demo outputs, a configurable CLI, tests, and CI.
 
-### Research Intern - Prut Lab, Safra Center for Brain Sciences
+### [Facial Image Classification — ML experiment](https://github.com/ghadikhoury/deep-learning-facial-image-classification)
 
-Optimized a DeepLabCut-based neuroscience video pipeline by replacing a sequential MATLAB frame loop with concurrent FFmpeg workers, reducing processing time from **1h50m to 8.7 minutes per recording day** across 1,329 videos. I am currently helping prepare synchronized macaque facial-landmark and electrode-recorded neural data for future multimodal analysis.
+Compared eight neural-network architectures and transfer-learning approaches on 2,526 images. The selected ResNet50 model reached **83.5% held-out test accuracy** and **0.917 ROC-AUC**. The repository documents dataset and evaluation limits; this is an educational classification experiment, not a diagnostic tool.
 
-## Selected projects
+## Research experience
 
-### [Real-Time Object Detection and Tracking](https://github.com/ghadikhoury/PennAir-ShapeDetection)
-
-OpenCV pipeline developed for the PennAir software challenge. Detects and classifies geometric shapes in noisy video, maintains persistent object identities and trajectories, and includes a configurable CLI, synthetic tests, and GitHub Actions CI.
-
-### [Deep Learning Facial Image Classification](https://github.com/ghadikhoury/deep-learning-facial-image-classification)
-
-Reproducible TensorFlow/Keras comparison of eight dense, CNN, and transfer-learning architectures on 2,526 images. The strongest ResNet50 model reached **83.5% held-out test accuracy** and **0.917 ROC-AUC**, with stratified splits and leakage checks.
-
-### [Beacon](https://github.com/ghadikhoury/beacon)
-
-Prototype emergency handoff platform that streams paramedic speech to hospital dashboards, structures it into a MIST report, and supports real-time triage workflows using FastAPI, WebSockets, React, and TypeScript.
-
-### Sawt Al-Zaman
-
-Built and operated a heritage streetwear e-commerce brand through Shopify and print-on-demand fulfillment, generating **$4K+ in sales** and growing to **700K+ combined followers**.
-
-## Technologies
-
-**Languages:** Python, TypeScript, JavaScript, Java, SQL, MATLAB  
-**Web and data:** React, FastAPI, WebSockets, DuckDB, Docker  
-**Machine learning and vision:** TensorFlow, PyTorch, OpenCV, DeepLabCut  
-**Systems and media:** FFmpeg, CUDA, NVDEC, NVENC, GitHub Actions
+At the Prut Lab, optimized a DeepLabCut video-processing pipeline with concurrent FFmpeg workers, reducing processing time from **1 hour 50 minutes to 8.7 minutes per recording day** across 1,329 videos.
